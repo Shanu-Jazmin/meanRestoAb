@@ -1,0 +1,23 @@
+
+
+<div class="container">
+  <div class="row">
+    <table id="customers" class="table table-striped">
+      <thead class="thead-dark">
+        <tr >
+          <th>Name</th>
+          <th>Address</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody class="Restolist" *ngIf="resto$ | async as Restolist">
+        <tr *ngFor="let item of Restolist">
+          <td>{{item.name}}</td>
+          <td>{{item.add}}</td>
+          <td>{{item.email}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

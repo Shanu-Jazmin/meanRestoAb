@@ -1,0 +1,36 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+  <a class="navbar-brand" href="#">Resto</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a *ngIf="userService.loggedIn()" routerLink="user/udRC">Manupulation</a>
+      <a *ngIf="!userService.loggedIn()" routerLink="user/register">SignUp</a>
+      <a *ngIf="!userService.loggedIn()" routerLink="user/login">Login</a>
+      <a *ngIf="userService.loggedIn()" style="cursor: pointer;" (click)="userService.logOut()">LogOut</a>
+    </div>
+  </div>
+</nav> -->
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+  <a class="navbar-brand" href="#"><p>RESTO</p></a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <ul class="main-menu">
+      <li>
+        <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li *ngIf="userService.loggedIn()">
+        <a *ngIf="userService.loggedIn()" routerLink="user/udRC">MANUPULATION</a>
+      </li>
+      <li *ngIf="!userService.loggedIn()">
+        <a *ngIf="!userService.loggedIn()" routerLink="user/register">SIGNUP</a>
+      </li>
+      <li *ngIf="!userService.loggedIn()">
+        <a *ngIf="!userService.loggedIn()" routerLink="user/login">LOGIN</a>
+      </li>
+      <li *ngIf="userService.loggedIn()">
+          <a style="cursor: pointer" (click)="userService.logOut()">LOGOUT</a>
+      </li>
+  </ul>
+  </div>
+</nav>

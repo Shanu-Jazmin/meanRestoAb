@@ -1,0 +1,37 @@
+nav {
+  background: #5c5e61;
+  padding:20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  h2{
+    color: #ffffff;
+  }
+
+
+  li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+  }
+  a {
+    color: #fff;
+    padding: 0 15px;
+    text-decoration: none;
+    line-height: 30px;
+    display: block;
+  }
+  h1{
+    color: #fff;
+    font-family: Bradley Hand, cursive	;
+    font-size: large;
+  }
+
+  p{
+    color: #fff;
+    font-family: Bradley Hand, cursive	;
+    font-size: 40px;
+  }

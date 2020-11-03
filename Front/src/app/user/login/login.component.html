@@ -1,0 +1,33 @@
+
+<div class="container">
+  <div class="row">
+    <form [formGroup]="loginForm" (ngSubmit)="userLogin()">
+      <div>
+        <h2>User Login</h2>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" formControlName="pass" placeholder="Enter password">
+      </div>
+      <div class="form-group">
+        <input type="submit" class="form-control" value="Login" [disabled]="!loginForm.valid">
+      </div>
+    </form>
+  </div>
+</div>
+
+<!--
+<h2>User Login</h2>
+<form [formGroup]="loginForm" (ngSubmit)="userLogin()">
+  <div class="form-group">
+    <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control" formControlName="pass" placeholder="Enter password">
+  </div>
+  <div class="form-group">
+    <input type="submit" class="form-control" value="Login" [disabled]="!loginForm.valid">
+  </div>
+</form> -->
